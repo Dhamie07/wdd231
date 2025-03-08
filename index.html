@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Course home page for Web and Computer Programming Certificate.">
+    <meta name="author" content="Okpewo Damilola James">
+    <title>Course Home Page</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="profile">
+        <img src="images/profile.webp" alt="Profile Image">
+        <span>Okpewo Damilola James</span>
+      </div>
+      <button id="nav-toggle">&#9776;</button>
+      <!-- Hamburger Icon -->
+      <nav id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">GitHub Profile</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+      <section class="course-work">
+        <h2>Course Work</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+
+      <section class="location">
+        <h2>Lagos, Nigeria</h2>
+        <img src="images/Lagos,Nigeria.webp" alt="Lagos Landscape">
+        <p>Tinubu Square</p>
+      </section>
+
+      <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="filters">
+          <button onclick="filterCourses('all')">All</button>
+          <button onclick="filterCourses('CSE')">CSE</button>
+          <button onclick="filterCourses('WDD')">WDD</button>
+        </div>
+        <div class="courses-list" id="courses"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Okpewo Damilola James | Lagos, Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
