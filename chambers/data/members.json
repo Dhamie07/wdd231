@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Alpha Tech Solutions",
+        "address": "123 Main St, Timbuktu",
+        "phone": "123-456-7890",
+        "website": "https://alphatech.com",
+        "image": "https://via.placeholder.com/150",
+        "membership": 3
+    },
+    {
+        "name": "Beta Innovations",
+        "address": "456 Elm St, Timbuktu",
+        "phone": "987-654-3210",
+        "website": "https://betainnovations.com",
+        "image": "https://via.placeholder.com/150",
+        "membership": 2
+    },
+    {
+        "name": "Gamma Business Co.",
+        "address": "789 Oak Ave, Timbuktu",
+        "phone": "456-789-1234",
+        "website": "https://gammabiz.com",
+        "image": "https://via.placeholder.com/150",
+        "membership": 1
+    },
+    {
+        "name": "Delta Corp",
+        "address": "321 Pine St, Timbuktu",
+        "phone": "111-222-3333",
+        "website": "https://deltacorp.com",
+        "image": "https://via.placeholder.com/150",
+        "membership": 3
+    },
+    {
+        "name": "Epsilon Enterprises",
+        "address": "654 Cedar Ln, Timbuktu",
+        "phone": "222-333-4444",
+        "website": "https://epsilonent.com",
+        "image": "https://via.placeholder.com/150",
+        "membership": 2
+    },
+    {
+        "name": "Zeta Marketing",
+        "address": "987 Birch Blvd, Timbuktu",
+        "phone": "333-444-5555",
+        "website": "https://zetamarketing.com",
+        "image": "https://via.placeholder.com/150",
+        "membership": 1
+    },
+    {
+        "name": "Theta Finance",
+        "address": "753 Maple Rd, Timbuktu",
+        "phone": "444-555-6666",
+        "website": "https://thetafinance.com",
+        "image": "https://via.placeholder.com/150",
+        "membership": 3
+    }
+]

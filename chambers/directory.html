@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Okpewo Damilola James">
+    <meta
+      name="description"
+      content="Timbuktu Chamber of Commerce Business Directory">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="path-to-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script defer src="scripts/directory.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo">
+            <h1>Timbuktu Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle">☰</button>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Business Directory</h2>
+        <button id="toggleView">Toggle Grid/List View</button>
+        <div id="members-container" class="grid-view"></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix, Timbuktu, Mali 999</p>
+            <p>Email: <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a></p>
+            <p>Phone: (223) 555-2300</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>

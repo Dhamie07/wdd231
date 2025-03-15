@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #004466;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Mobile Navigation */
+nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #004466;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#menu-toggle {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Members Directory */
+#members-container {
+    display: block;
+    padding: 20px;
+}
+
+.member-card {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #004466;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
