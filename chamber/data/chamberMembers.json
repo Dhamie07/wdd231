@@ -1,0 +1,23 @@
+[
+    {
+        "name": "ABC Corp",
+        "phone": "123-456-7890",
+        "address": "123 Main St",
+        "membership": "Gold",
+        "website": "https://abccorp.com"
+    },
+    {
+        "name": "Tech Solutions",
+        "phone": "987-654-3210",
+        "address": "456 Tech Blvd",
+        "membership": "Silver",
+        "website": "https://techsolutions.com"
+    },
+    {
+        "name": "Eco Energy",
+        "phone": "555-123-4567",
+        "address": "789 Greenway Ave",
+        "membership": "Gold",
+        "website": "https://ecoenergy.com"
+    }
+]

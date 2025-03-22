@@ -1,28 +1,57 @@
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    box-sizing: border-box; /* Ensures padding/border don’t affect width */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+    -webkit-text-size-adjust: 100%; /* Prevents text auto-resizing on mobile */
+}
+
+body {
+    font-size: 16px; /* Ensures a default font size */
+    line-height: 1.5; /* Improves readability */
+    font-family: Arial, sans-serif;
+    display: block;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 /* Make sure images don't exceed container width */
 img {
     max-width: 100%;
     height: auto;
+    display: block; /* Prevents inline spacing issues */
 }
+
+/* Remove list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Improve button appearance */
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Inputs */
+input, textarea, select {
+    font: inherit;
+}
+
 
