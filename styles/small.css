@@ -90,6 +90,34 @@ section {
     max-width: 90%;
 }
 
+dialog {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.5rem;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
 .course-work, .location, .certificate {
     background: #ECF0F1;
     margin: 20px auto;
