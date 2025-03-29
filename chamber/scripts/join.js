@@ -1,26 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Page loaded, initializing script...");
 
+    // Toggle Mobile Navigation
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
     if (menuToggle && navMenu) {
         menuToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
+            navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
         });
     }
 
+    // Update Footer Year & Last Modified Date
     const yearElement = document.getElementById("year");
-    if (yearElement) yearElement.textContent = new Date().getFullYear();
-
     const lastModifiedElement = document.getElementById("lastModified");
+    if (yearElement) yearElement.textContent = new Date().getFullYear();
     if (lastModifiedElement) lastModifiedElement.textContent = document.lastModified;
 
+    // Fetch & Display Members
     const membersContainer = document.getElementById("members-container");
     if (membersContainer) {
-        fetchMembers(membersContainer);
+        console.log("Members container found, fetching members...");
+        fetchMembers();
     }
 
-    const toggleButton = document.getElementById("toggle-view");
+    // Toggle View Mode
+    const toggleButton = document.querySelector("#toggle-view");
     if (toggleButton && membersContainer) {
         toggleButton.addEventListener("click", () => {
             membersContainer.classList.toggle("grid-view");
@@ -28,23 +32,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-async function fetchMembers(container) {
+// Fetch & Display Members
+async function fetchMembers() {
+    const container = document.getElementById("members-container");
+    if (!container) return;
+
     try {
-        const response = await fetch("chamber/data/members.json");
+        console.log("Fetching members...");
+        const response = await fetch("data/members.json");
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
         const members = await response.json();
-        displayMembers(members, container);
+        console.log("Members data:", members);
+        displayMembers(members);
     } catch (error) {
         console.error("Error loading members:", error);
-        container.innerHTML = `<p style="color: red;">Failed to load members.</p>`;
+        container.innerHTML = `<p style="color: red;">Failed to load members. Check console for details.</p>`;
     }
 }
 
-function displayMembers(members, container) {
+// Display Members
+function displayMembers(members) {
+    const container = document.getElementById("members-container");
+    if (!container) return;
+
     container.innerHTML = members.map(member => `
         <div class="member-card">
-            <img src="images/${member.image}" alt="${member.name} logo">
             <h3>${member.name}</h3>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
@@ -52,12 +65,17 @@ function displayMembers(members, container) {
             <p><strong>Membership Level:</strong> ${getMembershipLevel(member.level)}</p>
         </div>
     `).join("");
+
+    console.log("Members displayed successfully.");
 }
 
+// Convert membership level to readable text
 function getMembershipLevel(level) {
-    return level === 3 ? "Gold Member" : level === 2 ? "Silver Member" : "Member";
+    switch (level) {
+        case 3: return "Gold Member";
+        case 2: return "Silver Member";
+        default: return "Member";
+    }
 }
-
-
 
 

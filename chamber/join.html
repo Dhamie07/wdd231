@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Okpewo Damilola James">
+    <meta name="description" content="Timbuktu Chamber of Commerce Business Directory">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/chamber-logo.png">
+    <meta property="og:url" content="https://www.timbuktuchamber.org">
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/join.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <span>Timbuktu Chamber of Commerce</span>
+        </div>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="join-form">
+            <h2>Join the Chamber</h2>
+            <form action="thankyou.html" method="get">
+                <label>First Name:
+                    <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+                <label>Last Name:
+                    <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+                <label>Organizational Title:
+                    <input type="text" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" required>
+                </label>
+                <label>Email:
+                    <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+                <label>Mobile Phone:
+                    <input type="tel" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
+                </label>
+                <label>Business Name:
+                    <input type="text" name="businessName" title="Enter your business name" autocomplete="organization" required>
+                </label>
+                <label>Membership Level:
+                    <select name="membership" required>
+                        <option value="NP">NP Membership (Non-Profit - Free)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Business Description:
+                    <textarea name="description" title="Describe your business" required></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="membership-cards">
+            <div class="card" data-level="np">
+                <h3>NP Membership</h3>
+                <button>More Info</button>
+            </div>
+            <div class="card" data-level="bronze">
+                <h3>Bronze Membership</h3>
+                <button>More Info</button>
+            </div>
+            <div class="card" data-level="silver">
+                <h3>Silver Membership</h3>
+                <button>More Info</button>
+            </div>
+            <div class="card" data-level="gold">
+                <h3>Gold Membership</h3>
+                <button>More Info</button>
+            </div>
+        </section>
+        <div class="modals">
+            <div id="np-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>NP Membership Benefits</h2>
+                    <p>Access to networking events, free listings, and nonprofit resources.</p>
+                </div>
+            </div>
+            <div id="bronze-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Bronze Membership Benefits</h2>
+                    <p>Includes NP benefits plus advertising discounts and early event access.</p>
+                </div>
+            </div>
+            <div id="silver-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Silver Membership Benefits</h2>
+                    <p>All Bronze benefits plus premium business listings and social media promotion.</p>
+                </div>
+            </div>
+            <div id="gold-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Gold Membership Benefits</h2>
+                    <p>All Silver benefits plus priority event sponsorship and featured homepage ads.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix, Timbuktu, Mali 999</p>
+            <p>Email: <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a></p>
+            <p>Phone: (223) 555-2300</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/x.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
