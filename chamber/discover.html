@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Okpewo Damilola James">
+    <meta name="description" content="Timbuktu Chamber of Commerce Business Directory">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dhamie07.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://Dhamie07.github.io/wdd231/chamber/index.html">
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/join.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <span>Timbuktu Chamber of Commerce</span>
+        </div>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="discover-grid">
+        <aside class="sidebar" id="visit-message"></aside>
+        <div class="card-grid" id="cardContainer">
+         <!-- Cards inserted by JS -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix, Timbuktu, Mali 999</p>
+            <p>Email: info@timbuktucc.org</p>
+            <p>Phone: (223) 555-2300</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/x.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

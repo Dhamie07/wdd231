@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Freedom Park Lagos",
+      "address": "Old Prison Ground Broad Street, Lagos 23401 Nigeria ",
+      "description": "Freedom Park is a memorial and leisure park area in the middle of downtown Lagos in Lagos Island, Nigeria which was formerly Her Majesty's Broad Street Prison.",
+      "image": "images/Freedom Park.webp"
+    },
+    {
+      "name": "LUFASI Nature Park",
+      "address": "Majek 1st Gate Km 41, Lekki, Lagos 106104 Nigeria",
+      "description": " The Centre provide a meeting point for nature and leisure walk, outdoor sports, field research, school excursions, wildlife rescue & rehabilitation and other activities.",
+      "image": "images/LUFASI park.webp"
+    },
+    {
+        "name": "Nike Centre For Art And Culture",
+        "address": "No. 2, Elegushi Road 3rd Roundabout, Epe Expressway, Lagos 106104 Nigeria",
+        "description": "Nike Art Centre, Lagos, is one of Nigeria's hidden treasures. Located in Lekki, Lagos, the four-story building compromises of an art gallery and textile museum featuring over 7,000 pieces and soon to have Coffee shop.",
+        "image": "images/Nike Art Centre.webp"
+    },
+    {
+        "name": "Yankari National Park: A wildlife haven",
+        "address": "Gombe State, Northeastern Nigeria. ",
+        "description": "Yankari National Park is a large wildlife reserve in the north of Nigeria, home to diverse species of animals, including elephants, lions, and various bird species.",
+        "image": "images/960px-Yankari_Entry_Gate.webp"
+    },
+    {
+        "name": "Obudu Mountain Resort: A scenic plateau",
+        "address": "Obudu, Cross River State, Southeastern Nigeria. ",
+        "description": "Obudu Mountain Resort is a picturesque plateau in Cross River State, known for its breathtaking views and outdoor activities like ziplining and hiking.",
+        "image": "images/Obudu.webp"
+    },
+    {
+        "name": "Lekki Conservation Centre: A natural reserve",
+        "address": "Lekki Peninsula, Lagos State, Southwestern Nigeria. ",
+        "description": "The Lekki Conservation Centre is a wildlife sanctuary located on the Lekki Peninsula, offering a chance to observe the region's diverse flora and fauna.",
+        "image": "images/Lekki Conservation Centre.webp"
+    },
+    {
+        "name": "Olumo Rock",
+        "address": "Ikija Road, Abeokuta 110101 Nigeria",
+        "description": "Olumo Rock is a mountain in south-western Nigeria. It is located in the city of Abeokuta, Ogun State, and was normally used as a natural fortress during inter-tribal warfare in the 19th century. Its patron spirit is venerated in the Yoruba religion as an orisha.",
+        "image": "images/Olumo rock.webp"
+    },
+    {
+        "name": "Landmark Beach",
+        "address": "Plot 3 & 4 Water Corporation Road, Lagos 100500 Nigeria",
+        "description": "Landmark Beach, located in Lagos, Nigeria, is a family-centric entertainment beach known for its activities like jet skiing, kayaking, and boat cruises, as well as its relaxed atmosphere for evening drinks and relaxation. ",
+        "image": "images/Landmark.webp"
+    }
+  ]
+  

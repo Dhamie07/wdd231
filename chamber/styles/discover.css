@@ -1,0 +1,95 @@
+/* Base layout for discover grid */
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+      "sidebar"
+      "cards";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .card-grid {
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    min-height: 400px; /* Prevent layout shifts when content loads */
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card figure {
+    margin: 0;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto; /* Ensure aspect ratio remains intact */
+    max-width: 100%;
+    border-radius: 4px;
+    display: block;
+  }
+  
+  .card button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #0057a3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Reserve space for images and prevent layout shifts */
+  .card img {
+    width: 100%;
+    height: 200px; /* Define a fixed height */
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+    display: block;
+  }
+  
+  @media screen and (min-width: 641px) {
+    .discover-grid {
+      grid-template-areas: "sidebar cards";
+      grid-template-columns: 1fr 3fr;
+    }
+  
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .card img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .discover-grid {
+      grid-template-columns: 1fr 4fr;
+    }
+  
+    .card-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
