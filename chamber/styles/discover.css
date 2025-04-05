@@ -30,7 +30,7 @@
     padding: 1rem;
     border-radius: 8px;
     transition: box-shadow 0.3s;
-    min-height: 400px; /* Prevent layout shifts when content loads */
+    min-height: 400px;
   }
   
   .card h2 {
@@ -43,7 +43,7 @@
   
   .card img {
     width: 100%;
-    height: auto; /* Ensure aspect ratio remains intact */
+    height: auto; 
     max-width: 100%;
     border-radius: 4px;
     display: block;
@@ -62,8 +62,8 @@
   /* Reserve space for images and prevent layout shifts */
   .card img {
     width: 100%;
-    height: 200px; /* Define a fixed height */
-    object-fit: cover; /* Ensures image maintains aspect ratio */
+    height: 200px; 
+    object-fit: cover;
     display: block;
   }
   
