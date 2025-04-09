@@ -1,0 +1,123 @@
+[
+    {
+      "name": "Madagascar Magic",
+      "origin": "Madagascar",
+      "type": "Dark 70%",
+      "rating": 4.7,
+      "description": "A bold, fruity chocolate with hints of citrus.",
+      "image": "images/madagascar.webp"
+    },
+    {
+      "name": "Peruvian Delight",
+      "origin": "Peru",
+      "type": "Milk 45%",
+      "rating": 4.5,
+      "description": "Smooth and creamy with notes of caramel.",
+      "image": "images/peruvian-chocolate.webp"
+    },
+    {
+      "name": "Ecuador Essence",
+      "origin": "Ecuador",
+      "type": "Dark 85%",
+      "rating": 4.8,
+      "description": "Deep earthy tones and a rich finish.",
+      "image": "images/ecuador.webp"
+    },
+    {
+      "name": "Belgian Truffle Dream",
+      "origin": "Belgium",
+      "type": "Milk 50%",
+      "rating": 4.6,
+      "description": "Lusciously smooth truffle center with a silky shell.",
+      "image": "images/belgian.webp"
+    },
+    {
+      "name": "Tanzanian Twilight",
+      "origin": "Tanzania",
+      "type": "Dark 75%",
+      "rating": 4.4,
+      "description": "Hints of cherry and coffee make this one stand out.",
+      "image": "images/tanzanian.webp"
+    },
+    {
+      "name": "Swiss Velvet",
+      "origin": "Switzerland",
+      "type": "Milk 40%",
+      "rating": 4.9,
+      "description": "Unbelievably creamy with subtle nutty undertones.",
+      "image": "images/swiss.webp"
+    },
+    {
+      "name": "Dominican Gold",
+      "origin": "Dominican Republic",
+      "type": "Dark 72%",
+      "rating": 4.3,
+      "description": "A well-balanced dark chocolate with floral notes.",
+      "image": "images/domican.webp"
+    },
+    {
+      "name": "Venezuelan Vibe",
+      "origin": "Venezuela",
+      "type": "Dark 80%",
+      "rating": 4.6,
+      "description": "Rich and smoky with a smooth, slow melt.",
+      "image": "images/venezuela.webp"
+    },
+    {
+      "name": "Ivory Coast Indulgence",
+      "origin": "Ivory Coast",
+      "type": "Milk 42%",
+      "rating": 4.2,
+      "description": "Classic milk chocolate with a cocoa-forward twist.",
+      "image": "images/ivory-coast.webp"
+    },
+    {
+      "name": "Honduran Harmony",
+      "origin": "Honduras",
+      "type": "Dark 68%",
+      "rating": 4.5,
+      "description": "Smooth texture and balanced fruity acidity.",
+      "image": "images/honduras.webp"
+    },
+    {
+      "name": "Ghana Gold",
+      "origin": "Ghana",
+      "type": "Dark 60%",
+      "rating": 4.1,
+      "description": "A mellow, chocolate-forward bar with light spice.",
+      "image": "images/ghana.webp"
+    },
+    {
+      "name": "Samoan Secret",
+      "origin": "Samoa",
+      "type": "White 30%",
+      "rating": 3.9,
+      "description": "A tropical take on white chocolate with coconut hints.",
+      "image": "images/samoa.webp"
+    },
+    {
+      "name": "Mexican Mocha",
+      "origin": "Mexico",
+      "type": "Dark 70% with chili",
+      "rating": 4.7,
+      "description": "Spiced with chili and cinnamon for a fiery bite.",
+      "image": "images/mexico.webp"
+    },
+    {
+      "name": "Java Joy",
+      "origin": "Indonesia",
+      "type": "Dark 76%",
+      "rating": 4.4,
+      "description": "Nutty, robust, and perfect with coffee.",
+      "image": "images/java-joy.webp"
+    },
+    {
+      "name": "Brazilian Bliss",
+      "origin": "Brazil",
+      "type": "Milk 38%",
+      "rating": 4.6,
+      "description": "Velvety and smooth with creamy coffee notes.",
+      "image": "images/brazillian-bliss.webp"
+    }
+  ]
+  

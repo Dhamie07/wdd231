@@ -1,0 +1,96 @@
+/* large.css */
+
+@media (min-width: 769px) {
+    /* === Header and Navbar (Large Screens) === */
+    .navbar {
+      justify-content: flex-start; /* Align logo to the left on larger screens */
+    }
+  
+    .logo img {
+      width: 100px; /* Larger logo for desktop */
+      height: 100px;
+    }
+  
+    .nav-toggle {
+      display: none; /* Hide toggle button on larger screens */
+    }
+  
+    .nav-menu {
+      display: flex; /* Show menu by default on larger screens */
+      flex-direction: row;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+    }
+  
+    .nav-menu li a {
+      color: white;
+      padding: 0.5rem 1rem;
+      border-bottom: none; /* Remove bottom border on desktop menu items */
+    }
+  
+    /* Hover effect (remains the same) */
+  
+    /* === Hero Section (Large Screens) === */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: left; /* Align text to the left on larger screens */
+    }
+  
+    .hero-image {
+      flex: 1 1 40%;
+      margin-bottom: 0;
+      order: 1; /* Move image to the right on larger screens */
+      display: flex;
+      justify-content: center;
+    }
+  
+    .hero-image img {
+      width: 350px;
+      height: 350px;
+      max-width: none; /* Override max-width */
+    }
+  
+    .hero-text {
+      flex: 1 1 50%;
+      order: 0; /* Keep text on the left */
+    }
+  
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+  
+    .cta-buttons {
+      flex-direction: row; /* Display buttons in a row on larger screens */
+      gap: 0.5rem;
+    }
+  
+    .cta-buttons .btn {
+      width: auto; /* Allow buttons to size based on content */
+      padding: 0.6rem 1.2rem;
+    }
+  
+    /* === Featured Section (Large Screens) === */
+    .featured {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Two columns for articles */
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+  
+    .featured h2 {
+      text-align: left;
+    }
+  
+    .featured article {
+      margin-bottom: 0; /* Remove bottom margin for grid layout */
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Align content to the left in articles */
+      justify-content: center;
+      min-height: 200px; /* Optional: ensure a minimum height for articles */
+    }
+}

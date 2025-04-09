@@ -1,0 +1,346 @@
+/* === Base Styles (Mobile First) === */
+body {
+    font-family: Georgia, serif;
+    background-color: #fffaf7; /* Very light beige */
+    color: #3e2d25; /* Dark brown */
+  }
+  
+  /* === Header and Navbar === */
+  header {
+    background-color: #5a3d33; /* Medium dark brown */
+    padding: 1rem 2rem;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out logo and toggle on small screens */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 60px; /* Smaller logo for mobile */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  .nav-menu {
+    display: none; /* Initially hide the menu on small screens */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #6b4b3a; /* Slightly darker brown for the mobile menu background */
+  }
+  
+  .nav-menu.show {
+    display: flex;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+  }
+  
+  .nav-menu li a:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hover effect */
+  .nav-menu li a:hover {
+    background-color: #d18a58; /* Medium light brown */
+  }
+  
+  .nav-toggle {
+    display: block; /* Show toggle button on small screens */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* === Hero Section === */
+  .hero {
+    padding: 2rem;
+    background-color: #d18a58; /* Medium light brown */
+    text-align: center; /* Center content on small screens */
+  }
+  
+  .hero-image {
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-image img {
+    width: 80%; /* Adjust image width for mobile */
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-text h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #3e2d25;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    color: black;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons on small screens */
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .cta-buttons .btn {
+    display: inline-block;
+    background-color: #3e2d25; /* Dark brown button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%; /* Make buttons full width on small screens */
+    text-align: center;
+  }
+  
+  .cta-buttons .btn:hover {
+    background-color: #2d1d17; /* Even darker brown on hover */
+  }
+  
+  /* === Featured Section === */
+  .featured {
+    padding: 2rem;
+    background-color: #fff; /* White background */
+  }
+  
+  .featured h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #5a3d33;
+  }
+  
+  .featured article {
+    background-color: #fef4e8; /* Very light beige */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-bottom: 1.5rem; /* Add spacing between articles */
+  }
+  
+  .featured article:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* === Footer === */
+  footer {
+    background-color: #5a3d33; /* Dark blue */
+    color: #f1faee; /* Very light green/off-white for better contrast */
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2.5rem;
+  }
+  
+  .footer-content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-content p,
+  .footer-content a {
+    color: #f1faee;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-content a:hover {
+    color: #a8dadc;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icons img {
+    width: 2rem;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .social-icons img:hover {
+    opacity: 1;
+  }
+  
+  footer > p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  footer > a {
+    color: #a8dadc;
+    text-decoration: underline;
+  }
+  
+  footer > a:hover {
+    color: #f1faee;
+  }
+  
+  /* === Modal Dialog === */
+  dialog#chocoModal {
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-family: Georgia, serif;
+    background-color: #fffaf7; /* Very light beige */
+    color: #3e2d25; /* Dark brown text */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  dialog#chocoModal h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #5a3d33;
+  }
+  
+  dialog#chocoModal p {
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+  
+  dialog#chocoModal strong {
+    font-weight: bold;
+    color: black;
+  }
+  
+  dialog#chocoModal img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  #closeModal {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #5a3d33; /* Medium dark brown button */
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #closeModal:hover {
+    background-color: #3e2d25; /* Even darker brown on hover */
+  }
+  
+  /* === Chocolate Grid Styles (from JavaScript) - Adjust for small screens if needed */
+  .chocolate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller min width for mobile */
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fef4e8; /* Very light beige */
+  }
+  
+  .choco-card {
+    background-color: #fff; /* White card background */
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .choco-card:hover {
+    transform: scale(1.02); /* Subtle scale on mobile */
+  }
+  
+  .choco-card img {
+    width: 100%;
+    height: 150px; /* Smaller image height for mobile */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd; /* Light gray border */
+  }
+  
+  .choco-card h3 {
+    font-size: 1.2rem;
+    margin: 0.75rem;
+    color: #5a3d33;
+  }
+  
+  .choco-card p {
+    margin: 0 0.75rem 0.75rem 0.75rem;
+    font-size: 0.8rem;
+    color: #3e2d25;
+  }
+  
+  .choco-card strong {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* === Fun Fact and Spotlight Styles (from JavaScript) - Adjust for small screens */
+  #funFactContainer {
+    font-style: italic;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #funFactContainer:hover {
+    color: #5a3d33;
+  }
+  
+  #chocoSpotlightContainer {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    color: #3e2d25;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #chocoSpotlightContainer:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  #chocoSpotlightContainer h3 {
+    font-size: 1rem;
+    color: #5a3d33;
+    margin-bottom: 0.5rem;
+  }

@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title": "The Sweet History of Chocolate",
+      "date": "April 5, 2025",
+      "summary": "Explore the fascinating journey of chocolate, from its ancient Mesoamerican origins to the global phenomenon it is today.",
+      "content": "Chocolate has a rich and complex history, dating back thousands of years to the ancient civilizations of Mesoamerica. The Olmec, Maya, and Aztec cultures revered cacao beans..."
+    },
+    {
+      "id": 2,
+      "title": "Decoding Dark Chocolate: More Than Just Bitter",
+      "date": "March 28, 2025",
+      "summary": "Understand the nuances of dark chocolate and learn how to appreciate its diverse flavor profiles and health benefits.",
+      "content": "Dark chocolate, often misunderstood as simply 'bitter,' offers a wide range of complex flavors depending on the cocoa percentage, bean origin, and processing methods..."
+    },
+    {
+      "id": 3,
+      "title": "Artisan Chocolate Trends to Watch in 2025",
+      "date": "March 15, 2025",
+      "summary": "Stay ahead of the curve with the latest trends in the world of artisan chocolate, from bean-to-bar to innovative flavor combinations.",
+      "content": "The world of artisan chocolate is constantly evolving, with new trends emerging each year. In 2025, we're seeing a rise in single-origin chocolates, the exploration of unique inclusions..."
+    }
+  ]

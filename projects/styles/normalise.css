@@ -1,0 +1,34 @@
+/* Minimal Normalize */
+body {
+    margin: 0;
+    font-family: sans-serif; /* A basic sans-serif font as a starting point */
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+  }

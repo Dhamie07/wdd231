@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Okpewo Damilola James">
+    <meta
+      name="description"
+      content="The Chocolate Connoisseur: Discover artisan chocolate, pairings, recipes, and the science behind your favorite treat.">
+    <meta property="og:title" content="The Chocolate Connoisseur">
+    <meta
+      property="og:description"
+      content="A complete resource for chocolate lovers. Explore, taste, and learn!">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Georgia&display=swap"
+      rel="stylesheet">
+    <meta property="og:image" content="images/chocolate-preview.jpg">
+    <meta property="og:url" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/community.css">
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/community.js" defer></script>
+
+    <title>The Chocolate Connoisseur</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="images/logo.jpg"
+            alt="The Chocolate Connoisseur Logo"
+            loading="lazy">
+          <span>Choco Connoisseur</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="community-page">
+      <section class="community">
+        <h2>Chocolate Enthusiasts Community</h2>
+
+        <div class="user-reviews">
+          <h3>Share Your Favorites</h3>
+          <form id="favoriteChocolateForm">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="brand">Favorite Chocolate Brand:</label>
+              <input type="text" id="brand" name="brand" required>
+            </div>
+            <button type="submit" class="submit-favorite">Submit</button>
+          </form>
+
+          <h3>User Favorites</h3>
+          <ul id="favoritesList"></ul>
+        </div>
+
+        <div class="chocolate-poll">
+          <h3>What's Your Favorite Type of Chocolate?</h3>
+          <form id="chocolatePollForm">
+            <div class="poll-option">
+              <input type="radio" id="milk" name="favoriteType" value="milk">
+              <label for="milk">Milk Chocolate</label>
+            </div>
+            <div class="poll-option">
+              <input type="radio" id="dark" name="favoriteType" value="dark">
+              <label for="dark">Dark Chocolate</label>
+            </div>
+            <div class="poll-option">
+              <input
+                type="radio"
+                id="white"
+                name="favoriteType"
+                value="white">
+              <label for="white">White Chocolate</label>
+            </div>
+            <div class="poll-option">
+              <input
+                type="radio"
+                id="other"
+                name="favoriteType"
+                value="other">
+              <label for="other">Other</label>
+              <input
+                type="text"
+                id="other-text"
+                name="otherText"
+                placeholder="Specify">
+            </div>
+            <button type="submit" class="submit-poll">Vote</button>
+          </form>
+
+          <div id="pollResults" class="hidden">
+            <h3>Poll Results</h3>
+            <ul id="resultsList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <h2>Chocolate Blog</h2>
+        <div id="blogPosts">
+          <p>Loading blog posts...</p>
+        </div>
+        <a href="#" class="view-all-blog">View All Blog Articles</a>
+      </section>
+
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Name:</label>
+            <input type="text" id="contactName" name="contactName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-contact">Send Message</button>
+        </form>
+      </section>
+
+      <section class="about">
+        <h2>About The Chocolate Connoisseur</h2>
+        <p>
+          Welcome to The Chocolate Connoisseur, a passion project born out of a
+          deep love for all things chocolate...
+        </p>
+        <p>Our mission is to celebrate the world of chocolate in all its forms, fostering a deeper appreciation for its craftsmanship, history, and cultural significance, and connecting enthusiasts through shared experiences and knowledge.</p>
+        <p>Our vision for the future is to inspire a lifelong love affair with chocolate, connecting individuals through shared passion, knowledge, and experiences, and becoming the trusted guide for navigating the rich and diverse world of chocolate.</p>
+        <a href="#" class="read-more-about">Read More About Us</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Choco Connoisseur</p>
+        <p>10 Rue De La Paix, Choco, Mali 999</p>
+        <p>Email: info@chococn.org</p>
+        <p>Phone: (223) 555-2300</p>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+          <a href="#"><img src="images/x.webp" alt="Twitter"></a>
+          <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <p>&copy; <span id="year"></span> 2025 Choco Connoisseur</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <dialog id="chocoModal">
+      <p id="modalContent"></p>
+      <button id="closeModal">Close</button>
+    </dialog>
+  </body>
+</html>

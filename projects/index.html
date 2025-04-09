@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Okpewo Damilola James">
+    <meta
+      name="description"
+      content="The Chocolate Connoisseur: Discover artisan chocolate, pairings, recipes, and the science behind your favorite treat.">
+    <meta property="og:title" content="The Chocolate Connoisseur">
+    <meta
+      property="og:description"
+      content="A complete resource for chocolate lovers. Explore, taste, and learn!">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Georgia&display=swap"
+      rel="stylesheet">
+    <meta property="og:image" content="images/chocolate-preview.jpg">
+    <meta property="og:url" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+
+    <title>The Chocolate Connoisseur</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="images/logo.jpg"
+            alt="The Chocolate Connoisseur Logo"
+            loading="lazy">
+          <span>Choco Connoisseur</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-image">
+          <img
+            src="images/hero.webp"
+            alt="Assorted artisan chocolates"
+            loading="lazy">
+        </div>
+        <div class="hero-text">
+          <h1>Welcome to The Choco Connoisseur</h1>
+          <p>
+            We’re here to celebrate chocolate – its rich history, complex
+            flavors, and the artisans who craft it. Discover tasting guides,
+            pairing secrets, and mouthwatering recipes.
+          </p>
+          <div class="cta-buttons">
+            <a href="explore.html" class="btn">Tasting Guide</a>
+            <a href="recipes.html" class="btn">Try Recipes</a>
+            <a href="community.html" class="btn">Join Community</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured">
+        <h2>Featured Chocolates</h2>
+        <article class="fact">
+          <h2>Did You Know?</h2>
+          <p id="funFact">Loading chocolate trivia...</p>
+        </article>
+
+        <article class="monthly">
+          <h2>Chocolate of the Month</h2>
+          <div id="chocoSpotlight">
+            <p>Loading spotlight chocolate...</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="chocolate-grid">
+        <h2>Explore Our Collection</h2>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Choco Connoisseur</p>
+        <p>10 Rue De La Paix, Choco, Mali 999</p>
+        <p>Email: info@chococn.org</p>
+        <p>Phone: (223) 555-2300</p>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+          <a href="#"><img src="images/x.webp" alt="Twitter"></a>
+          <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <p>&copy; <span id="year"></span> 2025 Choco Connoisseur</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <dialog id="chocoModal">
+      <p id="modalContent"></p>
+      <button id="closeModal">Close</button>
+    </dialog>
+  </body>
+</html>
